@@ -1,5 +1,6 @@
 
 import Hero from "@/components/Hero";
+import Capabilities from "@/components/Capabilities";
 import RecentProjects from "@/components/RecentProjects";
 import Solutions from "@/components/Solutions";
 import Knowledge from "@/components/Knowledge";
@@ -14,6 +15,7 @@ const Index = () => {
       <header className="flex items-center justify-between px-8 py-6 border-b border-border relative z-50">
         <div className="text-2xl font-bold">zero°</div>
         <nav className="hidden md:flex items-center space-x-8 text-sm">
+          <a href="#capabilities" className="text-muted-foreground hover:text-foreground transition-colors">What We Do</a>
           <a href="#solutions" className="text-muted-foreground hover:text-foreground transition-colors">Solutions</a>
           <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Services</a>
           <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -33,6 +35,11 @@ const Index = () => {
 
       {/* Hero Section */}
       <Hero />
+
+      {/* Capabilities Section */}
+      <section id="capabilities">
+        <Capabilities />
+      </section>
 
       {/* Recent Projects Section */}
       <section id="projects">
